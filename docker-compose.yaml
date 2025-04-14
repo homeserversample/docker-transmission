@@ -15,7 +15,7 @@ services:
       - HOST_WHITELIST= #optional
     volumes:
       - ./config:/config
-      - ./data:/data 
+      - ${SERVERS}/data:/data 
     ports:
       - 9091:9091
       - 51413:51413
